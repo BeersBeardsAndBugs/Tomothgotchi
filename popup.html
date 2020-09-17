@@ -7,6 +7,17 @@
   <title>Document</title>
 </head>
 <body>
-<div>moth</div>
+<div><h1>moth</h1>
+  <button id="button">Click this!</button>
+<img id="image" src="./pixel-moth.png" width="200" height="200" alt="Moth Logo">
+</div>
+<script>
+  const button = document.querySelector("#button");
+  button.addEventListener('click', () => {
+    const image = document.querySelector("#image");
+    image.display = image.display === "none"? "block":"none";
+  })
+  
+</script>
 </body>
 </html>
